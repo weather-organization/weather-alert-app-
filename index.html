@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>>WeatherGuard</title>
+  <link rel="stylesheet" href="/weather-Alert/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
     <header>
@@ -24,7 +26,47 @@
       </form>
     </div>
   </header>
-    </header>
-    
+      
+     <div id="active Alert">
+    <h3>active Alerts</h2>
+
+    <section class="= alert alert-severe">
+        <h3> severe Thunderstorm warning</h2>
+        <p> Damaging winds and heavy rain expected</p>
+        <span class="alert-time">untill 6:30</span>
+    </section>
+
+    <section class="alert alert-flood"> 
+        <h3> Flash flood watch</h2>
+        <p> Flooding possible in low-laying areas</p>
+        <span class="alert-time">untill 9:00pm</span>
+    </section>
+<section class="alert alert-heat"> 
+ <h3>heat Advisory</h3>
+ <p>High tempreture may cause heat ilness</p>
+ <span class="alert-time"> Tomorrow</span>
+</section>
+</div>
+    <footer>
+        <!--contaner that contain all content-->
+        <div class="maindiv">
+           <div class="alert">
+             <i class="far fa-bell"></i>
+            <h6>Active Alert</h6>
+           </div> 
+           <div class="live">
+            <i class="fa-solid fa-circle"></i>
+
+            <h6>Live Updates</h6>
+           </div>
+        </div>
+        <!--div that contain all clear-->
+        <div class="div">
+            <i class="far fa-check-circle"></i>
+            <h4>All Clear</h4>
+            <p>No weather  alert for you area at this time <br> Enjoy the pleasent weather</p>
+        </div>
+        
+    </footer>
 </body>
 </html>
