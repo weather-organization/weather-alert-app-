@@ -17,36 +17,7 @@ background-position: center;
         }
 
         
-/* footer */
-footer {
-    max-width: 800px;
-    background-color:  #1e2a38;
-    margin: 0 auto;
-    color: white;
-    padding: 30ppx 20px;
-    margin-top: 60px;
-}
-.maindiv{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 17px;
-  padding: 30px;
-}
 
-.div{
-  text-align: center;
-  padding: 0 0 40px;
-  line-height: 1.7rem;
- 
-}
-
-
-.nav {
-
-    position: relative;
-    padding: 24px 40px;
-}
 
 .logo {
 
@@ -169,3 +140,78 @@ background:navy blue ;
 }
 
 
+.container {
+  max-width: 1000px;
+  margin: -70px auto 50px;
+  padding: 0 20px;
+}
+
+
+.current-conditions-card {
+  background-color: #1f2937;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.current-conditions-card h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.conditions-list {
+  display: flex;
+  gap: 20px;
+}
+
+.condition-item {
+  flex: 1;
+  background-color: #111827;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  min-height: 110px;
+}
+
+.condition-value {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.condition-label {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+/* footer */
+footer {
+    max-width: 800px;
+    background-color:  #1e2a38;
+    margin: 0 auto;
+    color: white;
+    padding: 30ppx 20px;
+    margin-top: 60px;
+}
+.maindiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 17px;
+  padding: 30px;
+}
+
+.div{
+  text-align: center;
+  padding: 0 0 40px;
+  line-height: 1.7rem;
+ 
+}
+
+
+.nav {
+
+    position: relative;
+    padding: 24px 40px;
+}
