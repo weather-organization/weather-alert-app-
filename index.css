@@ -1,1 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body {
+margin: 0;
+ font-family: Arial, sans-serif;
+ padding: 40px;
+ background-image:url(/images-folder/weather\ image.png);
+background-repeat: no-repeat;
+background-position: center;
+  border-radius: 12px;
+  box-shadow: (0 20px 40px white);
+  color:  #eaf2ff;
+        }
+
+        
+/* footer */
+footer {
+    max-width: 800px;
+    background-color:  #1e2a38;
+    margin: 0 auto;
+    color: white;
+    padding: 30ppx 20px;
+    margin-top: 60px;
+}
+.maindiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 17px;
+  padding: 30px;
+}
+
+.div{
+  text-align: center;
+  padding: 0 0 40px;
+  line-height: 1.7rem;
+ 
+}
 
