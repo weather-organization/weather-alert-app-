@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>>WeatherGuard</title>
-  <link rel="stylesheet" href="/weather-Alert/index.css">
+  <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
@@ -44,28 +44,91 @@
       <p class="condition-value">12 mph</p>
       <p class="condition-label">Wind Speed</p>
     </div>
- 
-<div id="active-Alert">
-    <h2>active Alerts</h2>
 
-    <section class="= alert alert-severe">
-        <h3> severe Thunderstorm warning</h2>
-        <p> Damaging winds and heavy rain expected</p>
-        <span class="alert-time">untill 6:30</span>
-    </section>
+ <section id="active-Alert">
+  <div class="alerts-panel">
+   <div class="alerts-header">
+    <div class="alerts-title">
+      <span class="icon">🔔</span>
+      <h2>Active Alerts</h2>
+    </div>
 
-    <section class="alert alert-flood"> 
-        <h2> Flash flood watch</h2>
-        <p> Flooding possible in low-laying areas</p>
-        <span class="alert-time">untill 9:00pm</span>
-    </section>
-    
-<section class="alert alert-heat"> 
- <h2>heat Advisory</h3>
- <p>High tempreture may cause heat ilness</p>
- <span class="alert-time"> Tomorrow</span>
-</section>
-</div>
+    <div class="live-updates">
+      <span class="dot"></span>
+      <span>Live Updates</span>
+    </div>
+  </div>
+
+  <article class="alert-card severe">
+    <div class="alert-left">
+      <div class="alert-top">
+        <span class="warn-icon">⚠️</span>
+        <div>
+          <h3>Severe Thunderstorm Warning</h3>
+          <div class="sub">Denver, CO</div>
+        </div>
+      </div>
+
+      <p>Large hail and damaging winds expected. Seek shelter immediately.</p>
+
+      <div class="chips">
+        <span class="chip">THUNDERSTORM</span>
+        <span class="chip">ID: 1</span>
+      </div>
+    </div>
+
+    <div class="alert-right">
+      <span class="time-pill">1h remaining</span>
+    </div>
+  </article>
+
+  <article class="alert-card flood">
+    <div class="alert-left">
+      <div class="alert-top">
+        <span class="warn-icon">⚠️</span>
+        <div>
+          <h3>Flash Flood Watch</h3>
+          <div class="sub">Boulder County, CO</div>
+        </div>
+      </div>
+
+      <p>Heavy rainfall may lead to flash flooding. Monitor local conditions.</p>
+
+      <div class="chips">
+        <span class="chip">FLOOD</span>
+        <span class="chip">ID: 2</span>
+      </div>
+    </div>
+
+    <div class="alert-right">
+      <span class="time-pill">3h remaining</span>
+    </div>
+  </article>
+
+  <article class="alert-card wind">
+    <div class="alert-left">
+      <div class="alert-top">
+        <span class="warn-icon">⚠️</span>
+        <div>
+          <h3>High Wind Advisory</h3>
+          <div class="sub">Fort Collins, CO</div>
+        </div>
+      </div>
+
+      <p>Winds 25-35 mph with gusts up to 50 mph expected.</p>
+
+      <div class="chips">
+        <span class="chip">WIND</span>
+        <span class="chip">ID: 3</span>
+      </div>
+    </div>
+
+    <div class="alert-right">
+      <span class="time-pill">5h remaining</span>
+      </div>
+    </article>
+    </div>
+  </section>
 
     <footer>
         <div class="maindiv">

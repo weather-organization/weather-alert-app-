@@ -1,1 +1,122 @@
 
+.alerts-panel{
+  max-width: 760px;
+  margin: 40px auto;
+  padding: 18px;
+  background: #111827; 
+  border-radius: 16px;
+  box-shadow:
+  0 20px 40px rgba(0, 0, 0, 0.5),
+  0 8px 20px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #e5e7eb;
+}
+
+.alerts-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom: 14px;
+}
+
+.alerts-title{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.alerts-title h2{
+  margin:0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.live-updates{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.live-updates .dot{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:#ef4444;
+}
+
+.alert-card{
+  display:flex;
+  justify-content:space-between;
+  gap:18px;
+  padding: 16px;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 
+   0 10px 25px rgba(0, 0, 0, 0.35),
+   inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.alert-left{ flex: 1; }
+
+.alert-top{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+}
+
+.warn-icon{ font-size: 18px; }
+
+.alert-card h3{
+  margin:0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.sub{
+  margin-top: 2px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.alert-card p{
+  margin: 10px 0 12px;
+  font-size: 13px;
+  line-height: 1.35;
+  opacity: 0.95;
+}
+
+.chips{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
+.chip{
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.alert-right{
+  display:flex;
+  align-items:flex-start;
+}
+
+.time-pill{
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(255,255,255,0.12);
+  white-space: nowrap;
+}
+
+.alert-card.severe{ background: rgba(239, 68, 68, 0.25); }
+.alert-card.flood { background: rgba(249, 115, 22, 0.25); }
+.alert-card.wind  { background: rgba(245, 158, 11, 0.25); }
