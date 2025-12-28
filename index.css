@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .alerts-panel{
   max-width: 760px;
@@ -120,3 +125,214 @@
 .alert-card.severe{ background: rgba(239, 68, 68, 0.25); }
 .alert-card.flood { background: rgba(249, 115, 22, 0.25); }
 .alert-card.wind  { background: rgba(245, 158, 11, 0.25); }
+ body {
+margin: 0;
+ font-family: Arial, sans-serif;
+ padding: 40px;
+ background-image:url(/images-folder/weather\ image.png);
+background-repeat: no-repeat;
+background-position: center;
+  border-radius: 12px;
+  box-shadow: (0 20px 40px white);
+  color:  #eaf2ff;
+        }
+
+        
+
+
+.logo {
+
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+
+}
+
+.header-icon {
+
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.header-icon i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.hero {
+
+  position: relative;
+  min-height: 70vh;
+  background: url("https://images.unsplash.com/photo-1501630834273-4b5604d2ee31")
+    center / cover no-repeat;
+  color: white;
+}
+
+
+
+.hero-content {
+
+  position: relative;
+  display: flex;
+  z-index: 1;
+  height: calc(70vh - 80px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  
+}
+
+.hero-content h1 {
+
+    font-weight: 700px;
+    margin-bottom: 12px;
+
+}
+
+.hero-content p {
+
+    margin-bottom: 26px;
+    font-size: 16px;
+
+}
+
+.search-box {
+
+    display: flex;
+    background: black;
+    border-radius: 1000px;
+    padding: 0;
+    width: 100%;
+    max-width: 420px;
+}
+
+.search-box input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 18px;
+    font-size: 16;
+}
+
+.search-box button {
+    
+  border: none;
+  background:blue;
+  color: white;
+  padding: 0 22px;
+  border-radius: 999px;
+  font-weight: 500;
+  cursor: pointer;
+  
+
+}
+
+.search-box input::placeholder {
+
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 15px;
+
+
+}
+
+.search-box button :hover {
+
+background:navy blue ;
+
+}
+
+
+.container {
+  max-width: 1000px;
+  margin: -70px auto 50px;
+  padding: 0 20px;
+}
+
+
+.current-conditions-card {
+  background-color: #1f2937;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.current-conditions-card h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.conditions-list {
+  display: flex;
+  gap: 20px;
+}
+
+.condition-item {
+  flex: 1;
+  background-color: #111827;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  min-height: 110px;
+}
+
+.condition-value {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.condition-label {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+/* footer */
+footer {
+    max-width: 800px;
+    background-color:  #1e2a38;
+    margin: 0 auto;
+    color: white;
+    padding: 30ppx 20px;
+    margin-top: 60px;
+}
+.maindiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 17px;
+  padding: 30px;
+}
+
+.div{
+  text-align: center;
+  padding: 0 0 40px;
+  line-height: 1.7rem;
+ 
+}
+
+
+.nav {
+
+    position: relative;
+    padding: 24px 40px;
+}
