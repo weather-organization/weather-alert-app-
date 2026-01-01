@@ -6,6 +6,7 @@ const WeatherData = {
 
    },
 
+
 alerts: [
    {
       severityClass: "severa",
@@ -33,3 +34,39 @@ alerts: [
   }
 ]
 }
+
+
+// get the data API
+// const weatherAlrtApiUrl ="/current.json or /current.xml";
+
+// fetch (weatherAlrtApiUrl)
+// .then ((response)=>{
+//    if(!response.ok){
+//       alert("Error occured in the internet")
+//    }
+//    return response.json() // data will convert as string 
+//    alert("you have successful")
+// })
+// .then ((data)=>{
+//   console.log(data) 
+// })
+// .catch((error)=>{
+//    alert("error occured")
+// })
+const weatherAlrtApiUrl ="https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=London";
+function fetchApiUrl (){
+   return axios.get(weatherAlrtApiUrl)
+   .then ((response)=>{
+     console.log (response.data);
+
+   })
+   .catch ((error)=>{
+    console.log ("Error occurs:" );    
+   })
+}
+fetchApiUrl();
+
+
+
+
+
