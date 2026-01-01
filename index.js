@@ -1,6 +1,40 @@
+
+
+
+const conditionValues = document.querySelectorAll(".condition-value");
+function formatTemperature(temp) {
+  return `${Math.round(temp)}°F`;
+}
+function formatHumidity(humidity) {
+  return `${humidity}%`;
+}
+function formatWindSpeed(wind) {
+  return `${wind} mph`;
+}
+
+function renderCurrentConditions(data) {
+  const { temperature, humidity, windSpeed } = data;
+
+  conditionValues[0].textContent = formatTemperature(temperature);
+  conditionValues[1].textContent = formatHumidity(humidity);
+  conditionValues[2].textContent = formatWindSpeed(windSpeed);
+};
+
+const currentConditionsData = {
+  temperature: weatherData.currentConditions.temperature.value,
+  humidity: weatherData.currentConditions.humidity.value,
+  windSpeed: weatherData.currentConditions.windSpeed.value
+};
+
+renderCurrentConditions(currentConditionsData);
+
+console.log("Current conditions rendered:", currentConditionsData);
+
+
+
 const WeatherData = {
    Curentconditions : {
-     tempreture: {value: 72,  unit: "°F", label: "Temperature"},
+     tempareture: {value: 72,  unit: "°F", label: "Temperature"},
      Humidity: {value: 45, unit: "%", label: "Humidity"},
      WindSpeed: { value: 12, label: "Wind Speed"}
 
@@ -33,3 +67,5 @@ alerts: [
   }
 ]
 }
+
+
