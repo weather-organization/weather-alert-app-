@@ -69,3 +69,52 @@ alerts: [
 }
 
 
+const form = document.querySelector(".search-box");
+const zipInput = form.querySelector("input");
+const conditionValues = document.querySelectorAll(".condition-value");
+const alertCards = document.querySelectorAll(".alert-card");
+
+const API_KEY = "e51f40b629fbc9e9af140c6d81975828";
+
+async function fetchWeatherByZip(zip) {
+  
+  const url = `https://api.openweathermap.org/data/2.5/weather?zip=${zip},us&units=imperial&appid=${API_KEY}`;
+
+  try {
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      
+      throw new Error("Invalid ZIP code");
+    }
+
+    const data = await response.json();
+    
+    return data;
+
+  } catch (error) {
+    
+    console.error(error);
+    
+    alert("Unable to fetch weather data.");
+  }
+}
+ 
+ form.addEventListener("submit", e => {
+
+   e.preventDefault();
+
+   const zip = zipInput.value.trim();
+
+   if (!zip) {
+
+      alert("please enter a Zip code");
+      return;
+
+   }
+
+   console.log("fetching weather for zip", zip);
+
+   
+
+ })
