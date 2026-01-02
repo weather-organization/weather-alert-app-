@@ -17,7 +17,44 @@ border-radius: 12px;
  min-height: 100%;/* Abdirahman */
 }
 
+/* you can add if i am missing something */
+
+@media (max-width: 768px) {
+
+  .nav {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+ .hero-content {
+    padding: 0 16px;
+  }
+
+  .hero-content h1 {
+    font-size: 22px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+  .search-box {
+    width: 100%;
+  }
+  .conditions-list {
+    flex-direction: column;
+  }
+  .alert-card {
+    flex-direction: column;
+  }
+  .alert-right {
+    align-self: flex-start;
+  }
+}
+
+
  
+
 
 .nav{ /* Abdirahman */
   display: flex;
@@ -76,22 +113,25 @@ This code is unwanted s
 .hero-content h1 {
 
     font-weight: 700px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+   
 
 }
 
-.hero-content p {
+.hero-content h3 {
 
     margin-bottom: 26px;
-    font-size: 16px;
+    font-size: 13px;
 
 }
 
 .search-box {
 
     display: flex;
-    background: black;
+    background:#1f2937;
     border-radius: 1000px;
+    background: #0b1220;
+    border-radius: 999px;
     padding: 0;
     width: 100%;
     max-width: 420px;
@@ -110,7 +150,7 @@ This code is unwanted s
 .search-box button {
     
   border: none;
-  background:blue;
+  background:rgb(0, 78, 204);
   color: white;
   padding: 0 22px;
   border-radius: 999px;
@@ -147,7 +187,7 @@ background:navy blue ;
   border-radius: 14px;
   padding: 20 25px;  /* Abdirahman */
   margin-bottom: 30px;
-  max-width: 800px;
+   max-width: 760px;
   margin: 0 auto;  /* Abdirahman */
   margin-top: 30px;  /* Abdirahman */
 }
@@ -188,7 +228,7 @@ background:navy blue ;
   max-width: 760px;
   margin: 40px auto;
   padding: 18px;
-  background: #111827; 
+  background: #1f2937; 
   border-radius: 16px;
   box-shadow:
   0 20px 40px rgba(0, 0, 0, 0.5),
