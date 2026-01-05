@@ -4,23 +4,34 @@
     box-sizing: border-box;
 }
  body {
-margin: 0;
- font-family: Arial, sans-serif;
- background-image:url(/images-/weather\ image.png);  /* Abdirahman */
+  
+ margin: 0;
+font-family: Arial, sans-serif;
+ background-image:url(/images-/weather\ image.png);  
 background-repeat: no-repeat;
 background-position: center;
-background-size: cover;/* Abdirahman */
+background-size: cover;
 border-radius: 12px;
  box-shadow: (0 20px 40px white);
  color:  #eaf2ff;
- max-width: 100%;/* Abdirahman */
- min-height: 100%;/* Abdirahman */
+ /* max-width: 100%; */
+ min-height: 100%;
 }
 
-/* you can add if i am missing something */
+.background {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
 
 @media (max-width: 768px) {
 
+
+  .maindiv{
+    flex-direction: column;
+    text-align: center;
+  }
   .nav {
     flex-direction: column;
     gap: 12px;
@@ -53,14 +64,15 @@ border-radius: 12px;
 }
 
 
- 
+.nav{ 
 
-
-.nav{ /* Abdirahman */
-  display: flex;
-  justify-content: space-around;
+ display: flex;
+ justify-content: space-around;
  align-items: center;
+ position: relative;
+ padding: 24px 40px;
 }
+
 .nav li{
   list-style-type: none;
 }
@@ -100,13 +112,13 @@ This code is unwanted s
   position: relative;
   display: flex;
   z-index: 1;
-  /* height: calc(70vh - 80px); */
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin-top: 15px;
-  /* padding: 0 20px; */
+ 
   
 }
 
@@ -144,7 +156,7 @@ This code is unwanted s
     outline: none;
     color: white;
     padding: 14px 18px;
-    font-size: 16;
+    font-size: 16px;
 }
 
 .search-box button {
@@ -187,7 +199,7 @@ background:navy blue ;
   border-radius: 14px;
   padding: 20 25px;  /* Abdirahman */
   margin-bottom: 30px;
-   max-width: 760px;
+  max-width: 760px;
   margin: 0 auto;  /* Abdirahman */
   margin-top: 30px;  /* Abdirahman */
 }
@@ -225,6 +237,8 @@ background:navy blue ;
 }
 
 .alerts-panel{
+
+  width: 100%;
   max-width: 760px;
   margin: 40px auto;
   padding: 18px;
@@ -347,20 +361,14 @@ background:navy blue ;
 .alert-card.wind  { background: rgba(245, 158, 11, 0.25); }
 
 
-        
-
-
-
 
 .container {
-  max-width: 1000px;
-  margin: -70px auto 50px;
+  max-width:100%;
+  margin: 0 auto 50px;
   padding: 0 20px;
 }
 
 
-
-/* footer */
 footer {
     max-width: 800px;
     background-color:  #1e2a38;
