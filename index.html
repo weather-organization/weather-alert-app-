@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>>WeatherGuard</title>
-  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+ <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
@@ -20,7 +21,7 @@
 
     <div class="hero-content">
       <h1>Stay Safe. Stay Informed.</h1>
-      <p>Real-time extreme weather alerts for your location</p>
+      <h3>Real-time extreme weather alerts for your location</h3>
 
       <form class="search-box">
         <input type="text" placeholder="Enter ZIP code" />
@@ -55,6 +56,7 @@
       
          
         <!--Active Alert -->
+    <div id="alertList"></div>
       <section id="active-Alert">
         <div class="alerts-panel">
           <div class="alerts-header">
@@ -68,8 +70,7 @@
               <span>Live Updates</span>
             </div>
           </div>
-
-          <article class="alert-card severe">
+<article class="alert-card severe">
             <div class="alert-left">
               <div class="alert-top">
                 <span class="warn-icon">⚠️</span>
@@ -90,9 +91,9 @@
             <div class="alert-right">
               <span class="time-pill">1h remaining</span>
             </div>
-          </article>
+         </article>
 
-          <article class="alert-card flood">
+         <article class="alert-card flood">
             <div class="alert-left">
               <div class="alert-top">
                 <span class="warn-icon">⚠️</span>
@@ -113,9 +114,9 @@
             <div class="alert-right">
               <span class="time-pill">3h remaining</span>
             </div>
-          </article>
+         </article> 
 
-          <article class="alert-card wind">
+         <article class="alert-card wind"> 
             <div class="alert-left">
               <div class="alert-top">
                 <span class="warn-icon">⚠️</span>
@@ -136,10 +137,14 @@
             <div class="alert-right">
               <span class="time-pill">5h remaining</span>
             </div>
-          </article>
+          </article> 
         </div>
           
          <!-- ✅Active Alert  End -->
+
+        <script type="module" src="index.js"> </script>
+        
+        main
    
          
 <!--     <div id="active-Alert">
